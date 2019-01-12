@@ -55,6 +55,10 @@ class App extends Component {
     return (
       <Router>
       <div className="App">
+<<<<<<< HEAD
+=======
+
+>>>>>>> b721702e49a2a6f6b30d805ba54bb2bf9058b011
         <Switch>
           <Route exact path="/form" component={SubmitForm}/>
           <Route exact path="/" component={Community}/>
