@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-import ListItem from './ListItem.js';
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import SubmitForm from './SubmitForm.js';
 import Community from './Community.js';
@@ -58,6 +57,7 @@ class App extends Component {
           <Route exact path="/form" component={SubmitForm}/>
           <Route exact path="/" component={Community}/>
           <Route exact path="/signin" component={SignIn}/>
+          <Route exact path="/recipes" component={RecipePage}/>
         </Switch>
       </div>
       </Router>

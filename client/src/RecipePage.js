@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
-import Tags from './Tags.js'
+import { render } from 'react-dom';
+import { Tabs, Tab, TabPanel, TabList } from 'react-web-tabs';
+import { Accordion, AccordionItem } from 'react-light-accordion';
+import 'react-light-accordion/demo/css/index.css';
+
 class RecipePage extends Component {
 
   state = {
@@ -10,10 +14,143 @@ class RecipePage extends Component {
   render() {
     return (
         <div>
-          <h2>Search for Recipes</h2>
+          <h2>Recipe Listing</h2>
+                             <Tabs
+      defaultTab="one"
+    onChange={(tabId) => { console.log(tabId) }}
+  >
+  <TabList>
+    <Tab tabFor="two">Cabbages</Tab>
+        <Tab tabFor="one">Tomatoes</Tab>
+    <Tab tabFor="three">Zucchini</Tab>
+    </TabList>
+    <TabPanel tabId="one">
+        <Accordion atomic={true}>
+
+        <AccordionItem title="GARDEN VEGETABLE PIE">
+        <div class="wprm-recipe-ingredients-container"><div class="wprm-recipe-header wprm-color-header">Ingredients</div><div class="wprm-recipe-ingredient-group"><ul class="wprm-recipe-ingredients"><li class="wprm-recipe-ingredient wprm-list-checkbox-container"><span class="wprm-list-checkbox"></span> <span class="wprm-recipe-ingredient-amount">1</span> <span class="wprm-recipe-ingredient-unit">9-inch</span> <span class="wprm-recipe-ingredient-name">deep dish pie shell</span> <span class="wprm-recipe-ingredient-notes">, prebaked</span></li><li class="wprm-recipe-ingredient wprm-list-checkbox-container"><span class="wprm-list-checkbox"></span> <span class="wprm-recipe-ingredient-amount">3</span> <span class="wprm-recipe-ingredient-name">tomatoes</span> <span class="wprm-recipe-ingredient-notes">, peeled and sliced (Roma work best)</span></li><li class="wprm-recipe-ingredient wprm-list-checkbox-container"><span class="wprm-list-checkbox"></span> <span class="wprm-recipe-ingredient-amount">1</span> <span class="wprm-recipe-ingredient-unit">small</span> <span class="wprm-recipe-ingredient-name">zucchini</span> <span class="wprm-recipe-ingredient-notes">, sliced into rings</span></li><li class="wprm-recipe-ingredient wprm-list-checkbox-container"><span class="wprm-list-checkbox"></span> <span class="wprm-recipe-ingredient-amount">1</span> <span class="wprm-recipe-ingredient-unit">small</span> <span class="wprm-recipe-ingredient-name">yellow squash</span> <span class="wprm-recipe-ingredient-notes">, sliced into rings</span></li><li class="wprm-recipe-ingredient wprm-list-checkbox-container"><span class="wprm-list-checkbox"></span> <span class="wprm-recipe-ingredient-amount">1/2</span> <span class="wprm-recipe-ingredient-unit">cup</span> <span class="wprm-recipe-ingredient-name">sweet onion</span> <span class="wprm-recipe-ingredient-notes">(or red onion), sliced</span></li><li class="wprm-recipe-ingredient wprm-list-checkbox-container"><span class="wprm-list-checkbox"></span> <span class="wprm-recipe-ingredient-amount">10</span> <span class="wprm-recipe-ingredient-name">fresh basil leaves</span> <span class="wprm-recipe-ingredient-notes">, chopped</span></li><li class="wprm-recipe-ingredient wprm-list-checkbox-container"><span class="wprm-list-checkbox"></span> <span class="wprm-recipe-ingredient-amount">1</span> <span class="wprm-recipe-ingredient-unit">cup</span> <span class="wprm-recipe-ingredient-name">shredded mozzarella cheese</span></li><li class="wprm-recipe-ingredient wprm-list-checkbox-container"><span class="wprm-list-checkbox"></span> <span class="wprm-recipe-ingredient-amount">1</span> <span class="wprm-recipe-ingredient-unit">cup</span> <span class="wprm-recipe-ingredient-name">freshly shredded cheddar cheese</span></li><li class="wprm-recipe-ingredient wprm-list-checkbox-container"><span class="wprm-list-checkbox"></span> <span class="wprm-recipe-ingredient-amount">3/4</span> <span class="wprm-recipe-ingredient-unit">cup</span> <span class="wprm-recipe-ingredient-name">mayonnaise</span> <span class="wprm-recipe-ingredient-notes">(or half mayo, half Greek yogurt)</span></li><li class="wprm-recipe-ingredient wprm-list-checkbox-container"><span class="wprm-list-checkbox"></span> <span class="wprm-recipe-ingredient-amount">2</span> <span class="wprm-recipe-ingredient-unit">Tablespoons</span> <span class="wprm-recipe-ingredient-name">freshly grated parmesan cheese</span></li><li class="wprm-recipe-ingredient wprm-list-checkbox-container"><span class="wprm-list-checkbox"></span> <span class="wprm-recipe-ingredient-name">salt and freshly ground black pepper</span></li></ul></div></div>
+    <div class="wprm-recipe-instructions-container"><div class="wprm-recipe-header wprm-color-header">Instructions</div><div class="wprm-recipe-instruction-group"><ol class="wprm-recipe-instructions"><li class="wprm-recipe-instruction"><div class="wprm-recipe-instruction-text">Preheat oven to 350 degrees F.</div></li><li class="wprm-recipe-instruction"><div class="wprm-recipe-instruction-text"><p>Place the tomatoes in a colander in the sink in 1 layer.&nbsp;</p></div></li><li class="wprm-recipe-instruction"><div class="wprm-recipe-instruction-text"><p>Sprinkle with salt and allow to drain for 10 minutes.&nbsp;</p></div></li><li class="wprm-recipe-instruction"><div class="wprm-recipe-instruction-text"><p>Use a paper towel to pat-dry the tomatoes and make sure most of the excess juice is out. (You don't want wet (juicy) tomatoes or your pie will turn out soggy).</p></div></li><li class="wprm-recipe-instruction"><div class="wprm-recipe-instruction-text"><p>Heat a large skillet over medium-high heat. Season zucchini and squash with salt and pepper. .&nbsp;</p></div></li><li class="wprm-recipe-instruction"><div class="wprm-recipe-instruction-text"><p>Saute the squash in a single layer for 2-3 minutes on each side or until golden brown. Remove to a paper towel</p></div></li><li class="wprm-recipe-instruction"><div class="wprm-recipe-instruction-text"><p>Layer the tomato slices, zucchini, squash, and onion on the bottom of the pie shell. Sprinkle basil on top.&nbsp;</p></div></li><li class="wprm-recipe-instruction"><div class="wprm-recipe-instruction-text"><p>Combine the grated cheeses and mayonnaise together.&nbsp;</p></div></li><li class="wprm-recipe-instruction"><div class="wprm-recipe-instruction-text"><p>Smooth cheese mixture over the top and sprinkle parmesan cheese on top.&nbsp;</p></div></li><li class="wprm-recipe-instruction"><div class="wprm-recipe-instruction-text"><p>Bake for about 30 minutes or until lightly browned. Allow to cool for at least 10 minutes.</p></div></li><li class="wprm-recipe-instruction"><div class="wprm-recipe-instruction-text">To serve, cut into slices and serve warm.</div></li></ol></div></div>
+        </AccordionItem>
+
+        <AccordionItem title="OVEN-FRIED GREEN TOMATOES">
+        <p>Ingredients</p>
+        <div class="ingredients"><ul>
+        <li class="ingredient" itemprop="ingredients">6 green tomatoes, sliced about 1/2 inch thick</li>
+    <li class="ingredient" itemprop="ingredients">3/4 cup Honeyville Blanched Almond Flour (If you only have almond meal, I would buzz in food processor to make it finer)</li>
+    <li class="ingredient" itemprop="ingredients">2 tsp. Old Bay Lemon and Herb Seasoning (or any spicy seasoning mix; use more or less to taste)</li>
+    <li class="ingredient" itemprop="ingredients">2 eggs, beaten well</li>
+    <li class="ingredient" itemprop="ingredients">1/2 cup Ranch Dressing (I confess I love the Ranch mix in a package that you mix with buttermilk)</li>
+    <li class="ingredient" itemprop="ingredients">1-2 tsp. Sriracha Rooster Sauce (start with 1 tsp. and taste to see if you want it more spicy)</li>
+    </ul>
+    </div>
+        <p>Instructions</p>
+    <div class="instructions" itemprop="recipeInstructions"><ol>
+        <li>Preheat oven or toaster oven to 350F/180C.&nbsp; Spray a baking sheet with non-stick spray.</li>
+    <li>Cut the tomatoes into slices about 1/2 inch thick.&nbsp; (We used the flat inner pieces and discarded the ends of the tomatoes with rounded edges.)&nbsp; Beat the eggs in a small bowl.&nbsp; In another bowl, mix the almond flour and Old Bay Seasoning.&nbsp; Remove and save half of the almond flour mixture, so you can work with two batches.</li>
+    <li>One at a time, dip both sides of each tomato slice into the egg and then into the almond flour mixture, using the fork or your fingers to press the almond mixture on to the tomato slice so it sticks.&nbsp; Place each tomato on the baking sheet after it’s coated with the almond flour mixture.&nbsp; (Don’t worry if they aren’t completely perfect; just work on getting each one coated with almond flour as much as you can.)</li>
+    <li>Bake tomatoes 35-40 minutes, turning carefully once.&nbsp; While the tomatoes bake, mix together the ranch dressing and Sriracha sauce to make the dipping sauce.&nbsp; The baked tomatoes are done when the almond mixture is lightly browned on each side and tomatoes are cooked through.&nbsp; Serve hot.</li>
+    <li>I saved some of these to see how they would hold up to a night in the refrigerator. I reheated them about 15 minutes in a preheated toaster oven set on 450F/230C. Although they were best freshly made, I thought the reheated ones were surprisingly good.</li>
+    </ol>
+    </div>
+        </AccordionItem>
+
+        </Accordion>
+    </TabPanel>
+    <TabPanel tabId="two">
+        <Accordion atomic={true}>
+
+        <AccordionItem title="ROASTED CABBAGE WEDGES">
+        <p>Ingredients</p>
+        <ul>
+        <li>cabbage</li>
+        <li>olive oil</li>
+    <li>salt</li>
+    <li>pepper</li>
+    <li>onion-dijon sauce</li>
+    <li>optional garlic-infused olive oil</li>
+    </ul>
+        <p>Instructions</p>
+    <ol>
+    <li>It’s easiest to deal with them if you leave the core intact on the wedges and let people cut it out when they’re eating it. Most other recipes will tell you to core them – don’t do it! The leaves stay together much better with the core, making it a breeze to turn when roasting.</li>
+    <li>Don’t try to make the wedges too small. Cut a medium head in half and then cut each half into quarters (or use just one half, depending on how many you’re serving). It’s easy to cut the cooked wedges in half at the table if needed, but the bigger wedges hold together better and cook more evenly.</li>
+    <li>They are perfectly good with regular olive oil, salt, and pepper, but if you have a bottle of garlic-infused olive oil (I like Trader Joe’s – it’s only $3.99) it takes it to a whole other, wonderful level. Garlic olive oil has quickly become a staple in our house.</li>
+    </ol>
+        </AccordionItem>
+
+        <AccordionItem title="CHICKEN CABBAGE SAUTE">
+        <p>Ingredients</p>
+        <ul>
+        <li>3 tbsp olive oil</li>
+    <li>1/2 lb boneless chicken thighs, cut into small pieces</li>
+    <li>1 small cabbage</li>
+    <li>2 medium carrots (shredded)</li>
+    <li>1 tbsp paprika</li>
+    <li>2 tomatoes</li>
+    <li>3 bay leaves</li>
+    <li>1 cup chicken stock</li>
+    <li>salt, pepper</li>
+    <li>chopped fresh parsley to garnish</li>
+    </ul>
+        <p>Instructions</p>
+    <ol>
+    <li>Warm up a large saute pan on medium-high heat. Add olive oil and chicken. Fry for 5-7 minutes or until browned.</li>
+    <li>Meanwhile, slice the cabbage into thin strips, just like you would for coleslaw.</li>
+                                                                               <li>Add cabbage and paprika to the chicken. Stir, and saute for another five to ten minutes.</li>
+    <li>Puree the tomato in a small food chopper or food processor.</li>
+    <li>Add tomato, chicken stock, carrots and bay leaves. Season with some salt and pepper. Stir everything together. Reduce heat to low, and cover with a tight lid.</li>
+    <li>Cook stirring occasionally for about 45 minutes, until there is no liquid remaining.</li>
+    <li>Garnish with fresh parsley.</li>
+    </ol>
+        </AccordionItem>
+
+        </Accordion>
+
+        </TabPanel>
+    <TabPanel tabId="three">
+        <Accordion atomic={true}>
+        <AccordionItem title="ZUCCHINI CUPS">
+        <p>Ingredients</p>
+        <ul>
+        <li>2 large zucchini or yellow squash, about 12 inches long</li>
+    <li>2 tsp. + 2 tsp. olive oil (may need more, depending on your pan)</li>
+    <li>1/2 cup finely chopped onion</li>
+    <li>1 green pepper, finely chopped</li>
+    <li>2 T finely minced fresh garlic</li>
+    <li>1 lb. ground beef (10% fat or less)</li>
+    <li>12 oz. ground turkey (10% fat or less)</li>
+    <li>(use any combination of ground meat you’d like, but use low-fat ground meat for the South Beach Diet.)</li>
+    <li>1-2 tsp. Spike seasoning (optional but recommended)</li>
+    <li>2 C flavorful tomato-basil pasta sauce</li>
+    <li>2 cups low-fat mozzarella or other mild white cheese (I used low-fat blend of six cheeses called Italian blend.)</li>
+    </ul>
+    <p>Instructions</p>
+    <ol>
+    <li>Preheat oven to 350F/175C. Chop onion and green pepper. Heat 2 tsp. olive oil in a non-stick pan, then saute onion and pepper for 3-4 minutes, until just starting to soften. Add minced garlic and saute about 1 minute more, being careful not to brown the garlic. Remove the onion, pepper, and garlic mixture to a bowl.</li>
+    <li>Add 2 Tsp. more olive oil to the pan. Crumble in the ground beef and ground turkey, season with Spike seasoning, and cook over medium heat until the meat is well browned. Tilt pan to see if there is any extra fat, and remove with a spoon if there is, then stir cooked vegetables and garlic back into the meat. Add tomato sauce and simmer until the mixture has thickened and liquid has cooked off, about 10 minutes, then turn off heat.</li>
+    <li>While meat cools, cut zucchini into 2 inch thick slices, discarding ends. Use a sharp spoon or melon baller to hollow out a cup in each zucchini slice, leaving just over 1/4 inch of zucchini flesh. Be careful not to get too close to the skin or the cups will leak liquid when they cook.</li>
+    <li>Spray a baking sheet with nonstick spray and stand up zucchini cups, open end up. Stir 1 1/2 cups grated cheese into the cooled meat mixture (it doesn’t need to be completely cool), then spoon the meat-cheese mixture into zucchini cups, pressing down with the spoon and mounding it up a little over the top of the zucchini.</li>
+    <li>Bake zucchini cups for 20 minutes, then remove from oven and use remaining cheese to top each one with a generous pinch of cheese. Put back in oven and bake 10-15 minutes more, until zucchini is slightly soft when pierced with a fork and cheese is melted and lightly browned. Serve hot.</li>
+    </ol>
+
+    </AccordionItem>
+
+    </Accordion>
+    </TabPanel>
+    </Tabs>
         </div>
   )
   }
 }
+
+const DummyContent = () => (
+    <p style={{ padding: '18px' }}>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+);
 
 export default RecipePage;
