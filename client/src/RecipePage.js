@@ -20,9 +20,9 @@ class RecipePage extends Component {
     onChange={(tabId) => { console.log(tabId) }}
   >
   <TabList>
-    <Tab tabFor="one">Tomatoes</Tab>
     <Tab tabFor="two">Cabbages</Tab>
-    <Tab tabFor="three">Onions</Tab>
+        <Tab tabFor="one">Tomatoes</Tab>
+    <Tab tabFor="three">Zucchini</Tab>
     </TabList>
     <TabPanel tabId="one">
         <Accordion atomic={true}>
@@ -107,7 +107,34 @@ class RecipePage extends Component {
 
         </TabPanel>
     <TabPanel tabId="three">
-        <p>Tab 3 content</p>
+        <Accordion atomic={true}>
+        <AccordionItem title="ZUCCHINI CUPS">
+        <p>Ingredients</p>
+        <ul>
+        <li>2 large zucchini or yellow squash, about 12 inches long</li>
+    <li>2 tsp. + 2 tsp. olive oil (may need more, depending on your pan)</li>
+    <li>1/2 cup finely chopped onion</li>
+    <li>1 green pepper, finely chopped</li>
+    <li>2 T finely minced fresh garlic</li>
+    <li>1 lb. ground beef (10% fat or less)</li>
+    <li>12 oz. ground turkey (10% fat or less)</li>
+    <li>(use any combination of ground meat you’d like, but use low-fat ground meat for the South Beach Diet.)</li>
+    <li>1-2 tsp. Spike seasoning (optional but recommended)</li>
+    <li>2 C flavorful tomato-basil pasta sauce</li>
+    <li>2 cups low-fat mozzarella or other mild white cheese (I used low-fat blend of six cheeses called Italian blend.)</li>
+    </ul>
+    <p>Instructions</p>
+    <ol>
+    <li>Preheat oven to 350F/175C. Chop onion and green pepper. Heat 2 tsp. olive oil in a non-stick pan, then saute onion and pepper for 3-4 minutes, until just starting to soften. Add minced garlic and saute about 1 minute more, being careful not to brown the garlic. Remove the onion, pepper, and garlic mixture to a bowl.</li>
+    <li>Add 2 Tsp. more olive oil to the pan. Crumble in the ground beef and ground turkey, season with Spike seasoning, and cook over medium heat until the meat is well browned. Tilt pan to see if there is any extra fat, and remove with a spoon if there is, then stir cooked vegetables and garlic back into the meat. Add tomato sauce and simmer until the mixture has thickened and liquid has cooked off, about 10 minutes, then turn off heat.</li>
+    <li>While meat cools, cut zucchini into 2 inch thick slices, discarding ends. Use a sharp spoon or melon baller to hollow out a cup in each zucchini slice, leaving just over 1/4 inch of zucchini flesh. Be careful not to get too close to the skin or the cups will leak liquid when they cook.</li>
+    <li>Spray a baking sheet with nonstick spray and stand up zucchini cups, open end up. Stir 1 1/2 cups grated cheese into the cooled meat mixture (it doesn’t need to be completely cool), then spoon the meat-cheese mixture into zucchini cups, pressing down with the spoon and mounding it up a little over the top of the zucchini.</li>
+    <li>Bake zucchini cups for 20 minutes, then remove from oven and use remaining cheese to top each one with a generous pinch of cheese. Put back in oven and bake 10-15 minutes more, until zucchini is slightly soft when pierced with a fork and cheese is melted and lightly browned. Serve hot.</li>
+    </ol>
+
+    </AccordionItem>
+
+    </Accordion>
     </TabPanel>
     </Tabs>
         </div>

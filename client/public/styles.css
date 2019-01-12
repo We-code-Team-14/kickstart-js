@@ -178,6 +178,6 @@ img.mypic {
   border-right: 3px solid #00d8ff;
 }
 
-AccordianItem > li {
+AccordionItem > li {
   text-align: left;
 }
