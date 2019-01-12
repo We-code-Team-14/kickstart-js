@@ -57,8 +57,55 @@ class RecipePage extends Component {
         </Accordion>
     </TabPanel>
     <TabPanel tabId="two">
-        <p>Tab 2 content</p>
-    </TabPanel>
+        <Accordion atomic={true}>
+
+        <AccordionItem title="ROASTED CABBAGE WEDGES">
+        <p>Ingredients</p>
+        <ul>
+        <li>cabbage</li>
+        <li>olive oil</li>
+    <li>salt</li>
+    <li>pepper</li>
+    <li>onion-dijon sauce</li>
+    <li>optional garlic-infused olive oil</li>
+    </ul>
+        <p>Instructions</p>
+    <ol>
+    <li>It’s easiest to deal with them if you leave the core intact on the wedges and let people cut it out when they’re eating it. Most other recipes will tell you to core them – don’t do it! The leaves stay together much better with the core, making it a breeze to turn when roasting.</li>
+    <li>Don’t try to make the wedges too small. Cut a medium head in half and then cut each half into quarters (or use just one half, depending on how many you’re serving). It’s easy to cut the cooked wedges in half at the table if needed, but the bigger wedges hold together better and cook more evenly.</li>
+    <li>They are perfectly good with regular olive oil, salt, and pepper, but if you have a bottle of garlic-infused olive oil (I like Trader Joe’s – it’s only $3.99) it takes it to a whole other, wonderful level. Garlic olive oil has quickly become a staple in our house.</li>
+    </ol>
+        </AccordionItem>
+
+        <AccordionItem title="CHICKEN CABBAGE SAUTE">
+        <p>Ingredients</p>
+        <ul>
+        <li>3 tbsp olive oil</li>
+    <li>1/2 lb boneless chicken thighs, cut into small pieces</li>
+    <li>1 small cabbage</li>
+    <li>2 medium carrots (shredded)</li>
+    <li>1 tbsp paprika</li>
+    <li>2 tomatoes</li>
+    <li>3 bay leaves</li>
+    <li>1 cup chicken stock</li>
+    <li>salt, pepper</li>
+    <li>chopped fresh parsley to garnish</li>
+    </ul>
+        <p>Instructions</p>
+    <ol>
+    <li>Warm up a large saute pan on medium-high heat. Add olive oil and chicken. Fry for 5-7 minutes or until browned.</li>
+    <li>Meanwhile, slice the cabbage into thin strips, just like you would for coleslaw.</li>
+                                                                               <li>Add cabbage and paprika to the chicken. Stir, and saute for another five to ten minutes.</li>
+    <li>Puree the tomato in a small food chopper or food processor.</li>
+    <li>Add tomato, chicken stock, carrots and bay leaves. Season with some salt and pepper. Stir everything together. Reduce heat to low, and cover with a tight lid.</li>
+    <li>Cook stirring occasionally for about 45 minutes, until there is no liquid remaining.</li>
+    <li>Garnish with fresh parsley.</li>
+    </ol>
+        </AccordionItem>
+
+        </Accordion>
+
+        </TabPanel>
     <TabPanel tabId="three">
         <p>Tab 3 content</p>
     </TabPanel>
